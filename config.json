@@ -1,0 +1,13 @@
+{
+  "env": "dev",
+  "db": {
+    "name": "mysql",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "database": "ashe",
+    "username": "root",
+    "password": "ashetest",
+    "timeout": 3000,
+    "log_mode": false
+  }
+}
