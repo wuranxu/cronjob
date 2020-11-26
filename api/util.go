@@ -60,6 +60,7 @@ func RegisterRouter(engine *gin.Engine) {
 	jobRouter := engine.Group("/job")
 	{
 		jobRouter.POST("/insert", AddJob)
+		jobRouter.GET("/start/:id", StartJob)
 		jobRouter.GET("/stop/:id", StopJob)
 	}
 }

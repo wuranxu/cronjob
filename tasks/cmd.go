@@ -10,6 +10,7 @@ import (
 
 func Command(ctx context.Context, cmd string) error {
 	c := exec.CommandContext(ctx, "bash", "-c", cmd)
+	//c := exec.CommandContext(ctx, "cmd", "/C", cmd)
 	stdout, err := c.StdoutPipe()
 	if err != nil {
 		return err

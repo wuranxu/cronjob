@@ -11,11 +11,18 @@ type Job struct {
 	command string
 }
 
+func New(id uint, command string) *Job {
+	return &Job{
+		ID: id, command: command,
+	}
+}
+
 func (j *Job) Run() {
 	log.Println("任务开始")
 	ctx, cancelFunc := context.WithCancel(context.Background())
 	j.cancel = cancelFunc
 	Command(ctx, j.command)
+	j.cancel = nil
 }
 
 func (j *Job) Stop() bool {
@@ -25,4 +32,8 @@ func (j *Job) Stop() bool {
 	j.cancel()
 	j.cancel = nil
 	return true
+}
+
+func (j *Job) Running() bool {
+	return j.cancel != nil
 }

@@ -9,12 +9,15 @@ import (
 	"sync"
 )
 
-var JobPool sync.Map
+var (
+	JobPool      sync.Map
+	CronInstance *cron.Cron
+)
 
 func InitTask() {
-	c := cron.New(cron.WithSeconds())
-	AddJobs(c)
-	c.Start()
+	CronInstance = cron.New(cron.WithSeconds())
+	AddJobs(CronInstance)
+	CronInstance.Start()
 }
 
 func AddJobs(cr *cron.Cron) {
