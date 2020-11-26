@@ -2,9 +2,12 @@ package database
 
 import (
 	"cronjob/config"
+	"cronjob/models"
 	"errors"
 	"fmt"
 	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
+	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"reflect"
 )
 
@@ -19,6 +22,17 @@ var (
 )
 
 type Columns map[string]interface{}
+
+func Use(cfg config.DbConfig) {
+	var err error
+	if Conn, err = NewConnect(cfg); err != nil {
+		panic(err)
+	}
+	Conn.LogMode(cfg.LogMode)
+	if cfg.AutoMigrate {
+		Conn.AutoMigrate(models.Tables...)
+	}
+}
 
 func NewConnect(cfg config.DbConfig) (cur *Cursor, err error) {
 	var (
