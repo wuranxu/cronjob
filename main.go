@@ -17,9 +17,11 @@ func main() {
 	flag.Parse()
 	// 设置logger
 	file := logger.InitLogger()
+
 	defer file.Close()
 	gin.ForceConsoleColor()
 	engine := gin.New()
+	engine.Use(handler.CORSMiddleware(), gin.Logger(), gin.Recovery())
 	api.RegisterRouter(engine)
 	// 加载配置
 	config.Use(*configPath)
@@ -27,6 +29,5 @@ func main() {
 	database.Use(config.Conf)
 	// 加载定时任务
 	tasks.InitTask()
-	engine.Use(gin.Logger(), gin.Recovery(), handler.CORSMiddleware())
 	engine.Run(":9999")
 }

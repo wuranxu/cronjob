@@ -129,3 +129,89 @@
 [2020-11-27 19:25:24] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/api/job.go:100 [{3 0xc0000a2a40 2020-11-27 19:26:05 +0800 CST 0001-01-01 00:00:00 +0000 UTC 0xc0000a2a00 0xc0000a2a00} {1 0xc00037c340 2020-11-27 20:05:19 +0800 CST 0001-01-01 00:00:00 +0000 UTC 0xc00037c300 0xc00037c300}]
 [2020-11-27 19:26:07] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/api/job.go:100 [{4 0xc000366700 2020-11-27 19:27:05 +0800 CST 0001-01-01 00:00:00 +0000 UTC 0xc0003666c0 0xc0003666c0} {1 0xc00037c340 2020-11-27 20:05:19 +0800 CST 0001-01-01 00:00:00 +0000 UTC 0xc00037c300 0xc00037c300}]
 [2020-11-27 19:28:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:31:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:32:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:33:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:34:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:35:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:36:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:37:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:38:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:39:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:40:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:41:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:42:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:43:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:44:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:45:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:46:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:47:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:48:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:49:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:50:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:51:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:52:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:53:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:54:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:55:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:56:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:57:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:58:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 19:59:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 20:00:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 20:01:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 20:02:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 20:03:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 20:04:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 20:04:12] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 1
+[2020-11-27 20:04:12] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 2
+[2020-11-27 20:04:12] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:52 [{1 0xc00038a9c0 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc00038a980 0xc00038a980} {2 0xc00038aa40 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc00038aa00 0xc00038aa00}]
+[2020-11-27 20:04:28] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 1
+[2020-11-27 20:04:28] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 2
+[2020-11-27 20:04:28] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:52 [{1 0xc000032540 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc000032500 0xc000032500} {2 0xc0000325c0 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc000032580 0xc000032580}]
+[2020-11-27 20:05:42] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 1
+[2020-11-27 20:05:42] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 2
+[2020-11-27 20:05:42] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:52 [{1 0xc0003be4c0 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc0003be480 0xc0003be480} {2 0xc0003be540 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc0003be500 0xc0003be500}]
+[2020-11-27 20:07:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 20:08:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 20:09:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 20:10:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 20:11:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 20:12:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 20:12:57] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 1
+[2020-11-27 20:12:57] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 2
+[2020-11-27 20:12:57] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:52 [{1 0xc00038e740 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc00038e700 0xc00038e700} {2 0xc00038e7c0 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc00038e780 0xc00038e780}]
+[2020-11-27 20:14:05] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/job.go:46 任务仍在进行，不继续操作
+[2020-11-27 20:14:38] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 1
+[2020-11-27 20:14:38] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 2
+[2020-11-27 20:14:38] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:52 [{1 0xc000384240 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc000384200 0xc000384200} {2 0xc0003842c0 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc000384280 0xc000384280}]
+[2020-11-27 20:15:57] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 1
+[2020-11-27 20:15:57] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 2
+[2020-11-27 20:15:57] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:52 [{1 0xc00037e4c0 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc00037e480 0xc00037e480} {2 0xc00037e540 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc00037e500 0xc00037e500}]
+[2020-11-27 20:17:11] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 1
+[2020-11-27 20:17:11] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 2
+[2020-11-27 20:17:11] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:52 [{1 0xc0000329c0 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc000032980 0xc000032980} {2 0xc000032a40 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc000032a00 0xc000032a00}]
+[2020-11-27 20:19:38] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 1
+[2020-11-27 20:19:38] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 2
+[2020-11-27 20:19:38] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:52 [{1 0xc000032880 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc000032840 0xc000032840} {2 0xc000032900 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc0000328c0 0xc0000328c0}]
+[2020-11-27 20:20:13] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 1
+[2020-11-27 20:20:13] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 2
+[2020-11-27 20:20:13] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:52 [{1 0xc00009a340 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc00009a300 0xc00009a300} {2 0xc00009a3c0 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc00009a380 0xc00009a380}]
+[2020-11-27 20:21:28] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 1
+[2020-11-27 20:21:28] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 2
+[2020-11-27 20:21:28] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:52 [{1 0xc0003729c0 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc000372980 0xc000372980} {2 0xc000372a40 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc000372a00 0xc000372a00}]
+[2020-11-27 20:21:57] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 1
+[2020-11-27 20:21:57] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 2
+[2020-11-27 20:21:57] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:52 [{1 0xc000032340 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc000032300 0xc000032300} {2 0xc0000323c0 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc000032380 0xc000032380}]
+[2020-11-27 20:24:07] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 1
+[2020-11-27 20:24:07] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 2
+[2020-11-27 20:24:07] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:52 [{1 0xc000392480 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc000392440 0xc000392440} {2 0xc000392500 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc0003924c0 0xc0003924c0}]
+[2020-11-27 20:27:56] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 1
+[2020-11-27 20:27:56] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 2
+[2020-11-27 20:27:56] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:52 [{1 0xc000380400 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc0003803c0 0xc0003803c0} {2 0xc000380480 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc000380440 0xc000380440}]
+[2020-11-27 20:33:35] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 1
+[2020-11-27 20:33:35] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 2
+[2020-11-27 20:33:35] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:52 [{1 0xc000388340 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc000388300 0xc000388300} {2 0xc0003883c0 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc000388380 0xc000388380}]
+[2020-11-27 20:34:43] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 1
+[2020-11-27 20:34:43] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:47 任务注册成功， ID： 2
+[2020-11-27 20:34:43] [INFO]: /Users/wuranxu/GolandProjects/github.com/wuranxu/cronjob/tasks/cron.go:52 [{1 0xc00038a380 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc00038a340 0xc00038a340} {2 0xc00038a400 0001-01-01 00:00:00 +0000 UTC 0001-01-01 00:00:00 +0000 UTC 0xc00038a3c0 0xc00038a3c0}]
