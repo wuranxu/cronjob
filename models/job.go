@@ -8,4 +8,5 @@ type Job struct {
 	Command  string `gorm:"type:text;not null" binding:"required" json:"command"`
 	Retry    uint   `gorm:"type:int;not null;default 0;comment: '重试次数'" json:"retry"`
 	Type     uint   `gorm:"type:int;not null;default 0;comment:'0: shell'" json:"type"`
+	Pause    bool   `gorm:"type:boolean;not null;default false;comment: '是否暂停'" json:"pause"`
 }

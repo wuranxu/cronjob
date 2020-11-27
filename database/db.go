@@ -21,7 +21,7 @@ var (
 	Conn *Cursor
 )
 
-type Columns map[string]interface{}
+//type Columns map[string]interface{}
 
 func Use(cfg config.DbConfig) {
 	var err error
@@ -90,9 +90,12 @@ func (c *Cursor) Find(out interface{}, where ...interface{}) *Cursor {
 }
 
 // find with pagination
-func (c *Cursor) FindPagination(page, pageSize int, out interface{}, where ...interface{}) *Cursor {
+func (c *Cursor) FindPagination(page, pageSize int, out interface{}, where ...interface{}) (int, error) {
 	c.DB.Error = nil
-	return c.Page(page, pageSize).Find(out, where...)
+	var total int
+	c.DB = c.Find(out, where...).Count(&total)
+	err := c.Page(page, pageSize).Error
+	return total, err
 }
 
 // find with order
@@ -142,7 +145,7 @@ func (c *Cursor) Updates(v interface{}, attrs ...interface{}) (int64, error) {
 	case 1:
 		switch to := attrs[0].(type) {
 		// receive map and struct
-		case Columns:
+		case map[string]interface{}:
 			c.DB = c.DB.Model(v).Updates(to)
 		default:
 			var dist string

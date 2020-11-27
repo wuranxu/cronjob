@@ -5,6 +5,7 @@ import (
 	"cronjob/config"
 	"cronjob/database"
 	"cronjob/handler"
+	"cronjob/logger"
 	"cronjob/tasks"
 	"flag"
 	"github.com/gin-gonic/gin"
@@ -14,6 +15,9 @@ var configPath = flag.String("conf", "./config.json", "配置文件")
 
 func main() {
 	flag.Parse()
+	// 设置logger
+	file := logger.InitLogger()
+	defer file.Close()
 	gin.ForceConsoleColor()
 	engine := gin.New()
 	api.RegisterRouter(engine)

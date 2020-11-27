@@ -2,10 +2,10 @@ package tasks
 
 import (
 	"cronjob/database"
+	log "cronjob/logger"
 	"cronjob/models"
 	"fmt"
 	"github.com/robfig/cron/v3"
-	"log"
 	"sync"
 )
 
@@ -20,21 +20,36 @@ func InitTask() {
 	CronInstance.Start()
 }
 
+func Status(jobId string) int {
+	load, ok := JobPool.Load(jobId)
+	if !ok {
+		return 0
+	}
+	job := load.(*Job)
+	if job.running {
+		return 1
+	}
+	return 2
+}
+
 func AddJobs(cr *cron.Cron) {
 	jobs := fetchJobs()
 	for _, job := range jobs {
 		task := &Job{
 			ID:      job.ID,
 			command: job.Command,
+			pause:   job.Pause,
 		}
-		JobPool.Store(fmt.Sprintf("%d", task.ID), task)
-		addJob, err := cr.AddJob(job.CronExpr, task)
+		entry, err := cr.AddJob(job.CronExpr, task)
 		if err != nil {
-			log.Printf("任务注册失败: %v", err)
+			log.Errorf("任务注册失败: %v\n", err)
 		} else {
-			log.Println("任务注册成功， ID：", addJob)
+			log.Info("任务注册成功， ID：", entry)
+			task.entry = entry
+			JobPool.Store(fmt.Sprintf("%d", task.ID), task)
 		}
 	}
+	log.Info(CronInstance.Entries())
 }
 
 func fetchJobs() []*models.Job {
