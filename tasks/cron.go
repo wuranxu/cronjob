@@ -49,7 +49,6 @@ func AddJobs(cr *cron.Cron) {
 			JobPool.Store(fmt.Sprintf("%d", task.ID), task)
 		}
 	}
-	log.Info(CronInstance.Entries())
 }
 
 func fetchJobs() []*models.Job {

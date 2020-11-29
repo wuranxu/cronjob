@@ -76,7 +76,7 @@ func RegisterRouter(engine *gin.Engine) {
 		jobRouter.GET("/start/:id", StartJob)
 		jobRouter.GET("/stop/:id", StopJob)
 		jobRouter.GET("/list", ListJob)
-		jobRouter.GET("/log", Websocket)
+		jobRouter.GET("/log/:id", Websocket)
 	}
 }
 

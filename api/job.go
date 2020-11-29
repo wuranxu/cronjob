@@ -160,6 +160,7 @@ func ListJob(c *gin.Context) {
 
 // websocket
 func Websocket(c *gin.Context) {
+	id := c.Param("id")
 	ws, err := upGrader.Upgrade(c.Writer, c.Request, nil)
 	if err != nil {
 		log.Errorf("websocket连接失败, error: %v\n", err)
@@ -168,11 +169,7 @@ func Websocket(c *gin.Context) {
 	defer ws.Close()
 MESSAGE:
 	for {
-		mt, message, err := ws.ReadMessage()
-		if err != nil {
-			break
-		}
-		ch := tasks.StreamData.Read(string(message))
+		ch := tasks.StreamData.Read(id)
 		if ch == nil {
 			break MESSAGE
 		}
@@ -180,10 +177,11 @@ MESSAGE:
 			select {
 			case info := <-ch:
 				if info == nil {
-					tasks.StreamData.Close(string(message))
-					break MESSAGE
+					ws.WriteMessage(1, []byte("finished"))
+					tasks.StreamData.Close(id)
+					return
 				}
-				ws.WriteMessage(mt, []byte(*info))
+				ws.WriteMessage(1, []byte(*info))
 			}
 		}
 

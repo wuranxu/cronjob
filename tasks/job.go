@@ -63,6 +63,10 @@ func (j *Job) RunForWebSocket() {
 		log.Info("任务已被暂停")
 		return
 	}
+	if j.running {
+		log.Info("任务仍在进行，不继续操作")
+		return
+	}
 	j.running = true
 	ctx, cancelFunc := context.WithCancel(context.Background())
 	j.cancel = cancelFunc
@@ -73,6 +77,7 @@ func (j *Job) RunForWebSocket() {
 
 func (j *Job) Stop() bool {
 	if !j.running {
+		j.cancel = nil
 		return false
 	}
 	if j.cancel != nil {
