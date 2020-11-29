@@ -1,5 +1,5 @@
-import sys
+import time
 
-print("defwsfw")
-
-raise Exception("呵呵")
+for i in range(1000):
+    print(i)
+    time.sleep(1)

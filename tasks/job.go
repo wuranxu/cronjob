@@ -23,6 +23,14 @@ func New(id uint, spec, command string, pause bool) *Job {
 	}
 }
 
+func Stop(jobId string) {
+	load, ok := JobPool.Load(jobId)
+	if ok {
+		j := load.(*Job)
+		j.Stop()
+	}
+}
+
 func Update(job *Job) error {
 	load, ok := JobPool.Load(fmt.Sprintf("%d", job.ID))
 	if ok {

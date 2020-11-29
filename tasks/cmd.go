@@ -65,8 +65,8 @@ func reader(ctx context.Context, wg *sync.WaitGroup, jobId uint, stdout io.Reade
 				return
 			}
 			byte2String := ConvertByte2String([]byte(readString), "GB18030")
-			//fmt.Print(byte2String)
 			if websocket {
+				fmt.Println(byte2String)
 				StreamData.Send(fmt.Sprintf("%d", jobId), &byte2String)
 			}
 		}

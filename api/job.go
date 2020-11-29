@@ -173,16 +173,14 @@ MESSAGE:
 		if ch == nil {
 			break MESSAGE
 		}
-		for {
-			select {
-			case info := <-ch:
-				if info == nil {
-					ws.WriteMessage(1, []byte("finished"))
-					tasks.StreamData.Close(id)
-					return
-				}
-				ws.WriteMessage(1, []byte(*info))
+		select {
+		case info := <-ch:
+			if info == nil {
+				ws.WriteMessage(1, []byte("finished"))
+				tasks.StreamData.Close(id)
+				return
 			}
+			ws.WriteMessage(1, []byte(*info))
 		}
 
 	}
