@@ -161,28 +161,27 @@ func ListJob(c *gin.Context) {
 // websocket
 func Websocket(c *gin.Context) {
 	id := c.Param("id")
+	if _, ok := tasks.JobPool.Load(id); !ok {
+		log.Errorf("websocket连接失败, error: jobId不存在")
+		return
+	}
 	ws, err := upGrader.Upgrade(c.Writer, c.Request, nil)
 	if err != nil {
 		log.Errorf("websocket连接失败, error: %v\n", err)
 		return
 	}
-	defer ws.Close()
-MESSAGE:
+	tasks.Server.Add(id, ws)
 	for {
 		ch := tasks.StreamData.Read(id)
 		if ch == nil {
-			break MESSAGE
+			continue
 		}
-		select {
-		case info := <-ch:
-			if info == nil {
-				ws.WriteMessage(1, []byte("finished"))
-				tasks.StreamData.Close(id)
-				return
-			}
-			ws.WriteMessage(1, []byte(*info))
+		info := <-ch
+		if info == nil {
+			tasks.Server.SendMsg(id, "finished")
+			tasks.StreamData.Close(id)
+			return
 		}
-
+		tasks.Server.SendMsg(id, *info)
 	}
-
 }

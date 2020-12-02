@@ -4,8 +4,39 @@ import (
 	"context"
 	log "cronjob/logger"
 	"fmt"
+	"github.com/gorilla/websocket"
 	"github.com/robfig/cron/v3"
+	"sync"
 )
+
+type WsServer struct {
+	server map[string]*websocket.Conn
+	mu     sync.RWMutex
+}
+
+var Server = &WsServer{server: make(map[string]*websocket.Conn)}
+
+func (s *WsServer) Add(id string, conn *websocket.Conn) {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	s.server[id] = conn
+}
+
+func (s *WsServer) SendMsg(id, data string) {
+	s.mu.RLock()
+	for k, ws := range s.server {
+		if k == id {
+			ws.WriteMessage(1, []byte(data))
+		}
+	}
+	s.mu.RUnlock()
+}
+
+func (s *WsServer) CloseServer(id string) {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	_ = s.server[id].Close()
+}
 
 type Job struct {
 	ID      uint `json:"id"`
@@ -93,6 +124,7 @@ func (j *Job) Stop() bool {
 	}
 	j.cancel = nil
 	j.running = false
+	//StreamData.Close(fmt.Sprintf("%d", j.ID))
 	return true
 }
 

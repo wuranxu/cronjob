@@ -25,7 +25,7 @@ const (
 
 func (s *Stream) Send(jobId string, output *string) {
 	ch, ok := s.Load(jobId)
-	if !ok {
+	if !ok || ch == nil {
 		ch = make(chan *string)
 		s.Store(jobId, ch)
 	}
@@ -35,17 +35,18 @@ func (s *Stream) Send(jobId string, output *string) {
 
 func (s *Stream) Close(jobId string) {
 	load, ok := s.Load(jobId)
-	if !ok {
+	if !ok || load == nil {
 		return
 	}
 	strings := load.(chan *string)
 	close(strings)
-	s.Delete(jobId)
+	//s.Delete(jobId)
+	s.Store(jobId, nil)
 }
 
 func (s *Stream) Read(jobId string) chan *string {
 	ch, ok := s.Load(jobId)
-	if !ok {
+	if !ok || ch == nil {
 		return nil
 	}
 	return ch.(chan *string)
@@ -65,8 +66,8 @@ func reader(ctx context.Context, wg *sync.WaitGroup, jobId uint, stdout io.Reade
 				return
 			}
 			byte2String := ConvertByte2String([]byte(readString), "GB18030")
+			fmt.Println(byte2String)
 			if websocket {
-				fmt.Println(byte2String)
 				StreamData.Send(fmt.Sprintf("%d", jobId), &byte2String)
 			}
 		}
@@ -81,7 +82,8 @@ func SyncCommand(ctx context.Context, cmd string) error {
 }
 
 func Command(ctx context.Context, jobId uint, cmd string, websocket bool) error {
-	c := exec.CommandContext(ctx, "cmd", "/C", cmd)
+	//c := exec.CommandContext(ctx, "cmd", "/C", cmd)
+	c := exec.CommandContext(ctx, "bash", "-c", cmd)
 	stdout, err := c.StdoutPipe()
 	if err != nil {
 		return err
